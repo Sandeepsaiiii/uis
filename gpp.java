@@ -10,3 +10,34 @@ public class AccountClass {
  
     }
 }
+class Account {
+    private int id = 0;
+    private double balance = 0.0;
+    private static double annualInterestRate = 0.0;
+    private java.util.Date dateCreated;
+
+    public Account() {
+        dateCreated = new java.util.Date();
+    }
+
+    public Account(int id, double balance) {
+        this();
+        this.id = id;
+        this.balance = balance;
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public double getBalance() {
+        return this.balance;
+    }
+
+    public double getAnnualInterestRate() {
+        return annualInterestRate;
+    }
+
+    public String getDateCreated() {
+        return this.dateCreated.toString();
+    }
